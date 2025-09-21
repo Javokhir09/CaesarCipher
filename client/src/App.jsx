@@ -10,7 +10,7 @@ function App() {
   const [tabToggle, setTabToggle] = useState(1);
 
   const handleCipher = async () => {
-    const res = await axios.post("http://localhost:8000/api/cipher", {
+    const res = await axios.post("https://caesarcipher-egct.onrender.com/api/cipher", {
       data: text,
       key: parseInt(key),
     });
@@ -18,7 +18,7 @@ function App() {
   }
 
   const handleDecipher = async () => {
-    const res = await axios.post("http://localhost:8000/api/decipher", {
+    const res = await axios.post("https://caesarcipher-egct.onrender.com/api/decipher", {
       data: text,
       key: parseInt(key),
     });
